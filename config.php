@@ -11,6 +11,7 @@ $autoload = function ($class) {
 
 spl_autoload_register($autoload);
 
+$url = explode('/', $_SERVER['REQUEST_URI']);
 
 //INSTÂNCIA DA CLASSE DE API
 $obEconomia = new Economia();
